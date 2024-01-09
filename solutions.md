@@ -8,7 +8,7 @@ Values can be stored in the hashmap and then retrieved using their key. This res
 
 ## Questions related:
 https://leetcode.com/problems/single-number/description/ 
-```
+```python
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
         hashmap = {}
@@ -26,10 +26,11 @@ class Solution:
                 return x
             
 ```
-<br>
+
 https://leetcode.com/problems/majority-element/
 
-```
+```python
+
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
         hashmap = {}
@@ -62,7 +63,7 @@ Use a tmp variable to hold the value of the value in the array that will be chan
 ## Questions related:
 https://leetcode.com/problems/remove-element/
 
-```
+```python
 
 class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
@@ -89,7 +90,7 @@ class Solution:
 ## Questions Related:
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 
-```
+```python
 
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
@@ -113,7 +114,8 @@ class Solution:
 ```
 
 https://leetcode.com/problems/fibonacci-number/
-```
+
+```python
 
 class Solution:
     def fib(self, n: int) -> int:
