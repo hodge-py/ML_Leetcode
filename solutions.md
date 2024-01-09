@@ -128,5 +128,53 @@ class Solution:
             
 ```
 
+# String
+
+## Questions Related:
+
+https://leetcode.com/problems/fizz-buzz/
+
+```
+
+class Solution:
+    def fizzBuzz(self, n: int) -> List[str]:
+        array = []
+        for x in range(1,n+1):
+            if x % 3 == 0 and x % 5 == 0:
+                array += ["FizzBuzz"]
+            elif x % 3 == 0:
+                array += ["Fizz"]
+            elif x % 5 == 0:
+                array += ["Buzz"]
+            else:
+                array += [f"{x}"]
+        
+
+        return array
+        
+```
+
+https://leetcode.com/problems/reverse-string/description/
+
+```
+
+class Solution:
+    def reverseString(self, s: List[str]) -> None:
+        """
+        Do not return anything, modify s in-place instead.
+        """
+        if len(s) % 2 == 0:
+            value = len(s) / 2
+        else:
+            value = len(s) / 2 + .5
+        
+        for x in range(int(len(s)-value)):
+            tmp = s[x]
+            s[x] = s[-1-x]
+            s[-1-x] = tmp
+        
+```
+
+
 
 
