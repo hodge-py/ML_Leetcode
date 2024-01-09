@@ -175,7 +175,7 @@ class Solution:
         
 ```
 
-https://leetcode.com/problems/find-the-difference/submissions/
+https://leetcode.com/problems/find-the-difference/description/
 
 ```python
 
