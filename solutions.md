@@ -9,6 +9,7 @@ Values can be stored in the hashmap and then retrieved using their key. This res
 ## Questions related:
 https://leetcode.com/problems/single-number/description/ 
 ```python
+
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
         hashmap = {}
@@ -203,4 +204,35 @@ class Solution:
 
 The key strategy for this solution is removing the letters from the bigger array until only 1 element remains. Then return that element.
 
+https://leetcode.com/problems/valid-anagram/description/
+
+```python
+
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        c = []
+        d = []
+
+        for x in s:
+            c += [x]
+
+        for y in t:
+            d += [y]
+
+        if len(c) != len(d):
+            return False
+
+        for x in range(len(c)):
+            for y in range(len(d)):
+                if c[x] == d[y]:
+                    d.pop(y)
+                    break
+
+
+        if len(d) == 0:
+            return True
+        else:
+            return False
+                
+```
 
