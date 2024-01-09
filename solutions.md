@@ -201,5 +201,6 @@ class Solution:
 
 ```
 
+The key strategy for this solution is removing the letters from the bigger array until only 1 element remains. Then return that element.
 
 
