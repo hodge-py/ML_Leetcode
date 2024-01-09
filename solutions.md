@@ -236,3 +236,31 @@ class Solution:
                 
 ```
 
+# Queue
+
+https://leetcode.com/problems/first-unique-character-in-a-string/description/
+
+```python
+
+class Solution:
+    def firstUniqChar(self, s: str) -> int:
+        c = []
+        for x in s:
+            c.append(x)
+        count = 0
+        for y in range(len(c)):
+
+            value = c.pop(0)
+            print(value)
+
+            if value in c:
+                c.append(value)
+            else:
+                return count
+                    
+            count += 1
+        
+        return -1
+
+```
+
