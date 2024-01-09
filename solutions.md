@@ -8,7 +8,6 @@ Values can be stored in the hashmap and then retrieved using their key. This res
 
 ## Questions related:
 https://leetcode.com/problems/single-number/description/ 
-Solution:
 ```
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
@@ -29,7 +28,6 @@ class Solution:
 ```
 <br>
 https://leetcode.com/problems/majority-element/
-Solution:
 ```
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
@@ -60,8 +58,6 @@ class Solution:
 Use a tmp variable to hold the value of the value in the array that will be changed.
 
 ## Questions related:
-
-solution:
 https://leetcode.com/problems/remove-element/
 
 ```
