@@ -134,7 +134,7 @@ class Solution:
 
 https://leetcode.com/problems/fizz-buzz/
 
-```
+```python
 
 class Solution:
     def fizzBuzz(self, n: int) -> List[str]:
@@ -156,7 +156,7 @@ class Solution:
 
 https://leetcode.com/problems/reverse-string/description/
 
-```
+```python
 
 class Solution:
     def reverseString(self, s: List[str]) -> None:
@@ -177,7 +177,7 @@ class Solution:
 
 https://leetcode.com/problems/find-the-difference/submissions/
 
-```
+```python
 
 class Solution:
     def findTheDifference(self, s: str, t: str) -> str:
