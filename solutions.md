@@ -175,6 +175,31 @@ class Solution:
         
 ```
 
+https://leetcode.com/problems/find-the-difference/submissions/
+
+```
+
+class Solution:
+    def findTheDifference(self, s: str, t: str) -> str:
+        c = []
+        d = []
+
+        for x in s:
+            c += [x]
+
+        for y in t:
+            d += [y]
+
+        for x in range(len(c)):
+            for y in range(len(d)):
+                if c[x] == d[y]:
+                    d.pop(y)
+                    break
+
+
+        return d[0]
+
+```
 
 
 
