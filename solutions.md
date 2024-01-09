@@ -28,6 +28,7 @@ class Solution:
 ```
 <br>
 https://leetcode.com/problems/majority-element/
+
 ```
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
@@ -51,6 +52,7 @@ class Solution:
                 maj = x
 
         return maj
+        
 ```
 
 # Array -> Inplace Movement
@@ -61,6 +63,7 @@ Use a tmp variable to hold the value of the value in the array that will be chan
 https://leetcode.com/problems/remove-element/
 
 ```
+
 class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
         count = 0
@@ -78,13 +81,16 @@ class Solution:
 
         
         return count
+        
 ```
 
 # Dynamic Programming
 
 ## Questions Related:
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+
 ```
+
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         low = prices[0]
@@ -103,10 +109,12 @@ class Solution:
             return 0
         else:
             return profit
+            
 ```
 
 https://leetcode.com/problems/fibonacci-number/
 ```
+
 class Solution:
     def fib(self, n: int) -> int:
         if n == 1:
@@ -115,6 +123,7 @@ class Solution:
             return 0
         else:
             return self.fib(n-1) + self.fib(n-2)
+            
 ```
 
 
