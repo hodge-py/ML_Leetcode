@@ -264,3 +264,22 @@ class Solution:
 
 ```
 
+# Math
+
+```
+
+class Solution:
+    def addDigits(self, num: int) -> int:
+        num = str(num)
+        while len(num) > 0:
+            count = 0
+            for x in range(len(num)):
+                count += int(num[x])
+
+            print(count)
+            if len(str(count)) == 1:
+                return int(count)
+            else:
+                num = str(count)
+
+```
