@@ -1,7 +1,7 @@
 # Leetcode notes and solutions
 ### These solutions are not optimized and only serve to solve the problems.
 
-# Array -> Hashmaps
+# Array -> Hash Table
 
 hashmaps = {}
 Values can be stored in the hashmap and then retrieved using their key. This results in a $O(1)$ since you can key a specific value. Or $O(n)$ when looping through the hashmap.
@@ -55,6 +55,30 @@ class Solution:
 
         return maj
         
+```
+
+https://leetcode.com/problems/intersection-of-two-arrays/description/
+
+```python
+
+class Solution:
+    def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        hashmap = {}
+
+        for x in range(len(nums1)):
+            hashmap[nums1[x]] = nums1[x]
+        
+
+        arr = []
+
+        for x in range(len(nums2)):
+            if nums2[x] in arr:
+                continue
+            elif nums2[x] in hashmap:
+                arr.append(nums2[x])
+        
+        return arr
+
 ```
 
 # Array -> Inplace Movement
@@ -360,6 +384,10 @@ class Solution:
                 return False
 
 ```
+
+# Two Pointer
+
+
 
 
 
