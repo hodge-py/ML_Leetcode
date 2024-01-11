@@ -325,7 +325,41 @@ class Solution:
 
 ```
 
+https://leetcode.com/problems/power-of-four/description/
 
+```python
+
+class Solution:
+    def isPowerOfFour(self, n: int) -> bool:
+        while n != 1:
+            if n == 0:
+                return False
+            elif n % 4 == 0:
+                n = n/4
+            else:
+                return False
+
+            
+        return True
+
+```
+
+https://leetcode.com/problems/valid-perfect-square/description/
+
+```python
+
+class Solution:
+    def isPerfectSquare(self, num: int) -> bool:
+        if num == 1:
+            return True
+        for x in range(num):
+            square = (x*x)
+            if square == num:
+                return True
+            elif square > num:
+                return False
+
+```
 
 
 
