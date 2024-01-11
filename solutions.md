@@ -266,7 +266,9 @@ class Solution:
 
 # Math
 
-```
+https://leetcode.com/problems/add-digits/
+
+```python
 
 class Solution:
     def addDigits(self, num: int) -> int:
@@ -283,3 +285,47 @@ class Solution:
                 num = str(count)
 
 ```
+
+https://leetcode.com/problems/missing-number/description/
+
+```python
+
+class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
+        final = -1
+        for x in range(len(nums)):
+            print(x)
+            if x not in nums:
+                final = x
+                break
+        
+        if final == -1:
+            return len(nums)
+        else:
+            return final
+
+```
+
+https://leetcode.com/problems/power-of-three/description/
+
+```python
+
+class Solution:
+    def isPowerOfThree(self, n: int) -> bool:
+        while n != 1:
+            if n == 0:
+                return False
+            elif n % 3 == 0:
+                n = n/3
+            else:
+                return False
+
+            
+        return True
+
+```
+
+
+
+
+
