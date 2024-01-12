@@ -8,7 +8,7 @@ hashmaps = {}
 Values can be stored in the hashmap and then retrieved using their key. This results in a $O(1)$ since you can key a specific value. Or $O(n)$ when looping through the hashmap.
 
 
-https://leetcode.com/problems/single-number/description/ 
+<https://leetcode.com/problems/single-number/description/>
 
 ```python
 
@@ -30,7 +30,7 @@ class Solution:
             
 ```
 
-https://leetcode.com/problems/majority-element/
+<https://leetcode.com/problems/majority-element/>
 
 ```python
 
@@ -59,7 +59,7 @@ class Solution:
         
 ```
 
-https://leetcode.com/problems/intersection-of-two-arrays/description/
+<https://leetcode.com/problems/intersection-of-two-arrays/description/>
 
 ```python
 
@@ -87,8 +87,7 @@ class Solution:
 
 Use a tmp variable to hold the value of the value in the array that will be changed.
 
-
-https://leetcode.com/problems/remove-element/
+<https://leetcode.com/problems/remove-element/>
 
 ```python
 
@@ -114,8 +113,7 @@ class Solution:
 
 ## Dynamic Programming
 
-
-https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+<https://leetcode.com/problems/best-time-to-buy-and-sell-stock/>
 
 ```python
 
@@ -140,7 +138,7 @@ class Solution:
             
 ```
 
-https://leetcode.com/problems/fibonacci-number/
+<https://leetcode.com/problems/fibonacci-number/>
 
 ```python
 
@@ -157,8 +155,7 @@ class Solution:
 
 ## String
 
-
-https://leetcode.com/problems/fizz-buzz/
+<https://leetcode.com/problems/fizz-buzz/>
 
 ```python
 
@@ -180,7 +177,7 @@ class Solution:
         
 ```
 
-https://leetcode.com/problems/reverse-string/description/
+<https://leetcode.com/problems/reverse-string/description/>
 
 ```python
 
@@ -201,7 +198,7 @@ class Solution:
         
 ```
 
-https://leetcode.com/problems/find-the-difference/description/
+<https://leetcode.com/problems/find-the-difference/description/>
 
 ```python
 
@@ -229,7 +226,7 @@ class Solution:
 
 The key strategy for this solution is removing the letters from the bigger array until only 1 element remains. Then return that element.
 
-https://leetcode.com/problems/valid-anagram/description/
+<https://leetcode.com/problems/valid-anagram/description/>
 
 ```python
 
@@ -261,7 +258,7 @@ class Solution:
                 
 ```
 
-https://leetcode.com/problems/determine-if-string-halves-are-alike/description/
+<https://leetcode.com/problems/determine-if-string-halves-are-alike/description/>
 
 ```python
 
@@ -295,7 +292,7 @@ class Solution:
 
 ```
 
-https://leetcode.com/problems/roman-to-integer/description/
+<https://leetcode.com/problems/roman-to-integer/description/>
 
 ```python
 
@@ -335,9 +332,38 @@ class Solution:
 
 ```
 
+<https://leetcode.com/problems/valid-palindrome/description/>
+
+```python
+
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        arr = []
+        s = s.lower()
+        for x in range(len(s)):
+            if s[x].isalnum() == True:
+                arr += s[x]
+        
+        arr2 = []
+        total = len(arr)-1
+        while total > -1:
+            print(arr[total])
+            arr2 += arr[total]
+
+            total -= 1
+
+            
+        
+        if arr2 == arr:
+            return True
+        else:
+            return False
+
+```
+
 ## Queue
 
-https://leetcode.com/problems/first-unique-character-in-a-string/description/
+<https://leetcode.com/problems/first-unique-character-in-a-string/description/>
 
 ```python
 
@@ -365,7 +391,7 @@ class Solution:
 
 ## Math
 
-https://leetcode.com/problems/add-digits/
+<https://leetcode.com/problems/add-digits/>
 
 ```python
 
@@ -385,7 +411,7 @@ class Solution:
 
 ```
 
-https://leetcode.com/problems/missing-number/description/
+<https://leetcode.com/problems/missing-number/description/>
 
 ```python
 
@@ -405,7 +431,7 @@ class Solution:
 
 ```
 
-https://leetcode.com/problems/power-of-three/description/
+<https://leetcode.com/problems/power-of-three/description/>
 
 ```python
 
@@ -424,7 +450,7 @@ class Solution:
 
 ```
 
-https://leetcode.com/problems/power-of-four/description/
+<https://leetcode.com/problems/power-of-four/description/>
 
 ```python
 
@@ -443,7 +469,7 @@ class Solution:
 
 ```
 
-https://leetcode.com/problems/valid-perfect-square/description/
+<https://leetcode.com/problems/valid-perfect-square/description/>
 
 ```python
 
@@ -462,7 +488,7 @@ class Solution:
 
 ## Two Pointer
 
-https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
+<https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/>
 
 ```python
 
@@ -478,6 +504,3 @@ class Solution:
                 j = i + 1
         
 ```
-
-
-
