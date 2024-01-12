@@ -523,3 +523,51 @@ class Solution:
                 j -= 1
 
 ```
+
+## Binary Search
+
+<https://leetcode.com/problems/guess-number-higher-or-lower/description/>
+
+```python
+
+class Solution:
+    def guessNumber(self, n: int) -> int:
+        high = n
+        low = 1
+        middle = n
+        while n > -1:
+            out = guess(middle)
+            if out == 0:
+                return middle
+            elif out == 1:
+                low = middle
+            elif out == -1:
+                high = middle
+        
+            if (high-low) % 2 == 0:
+                middle = ((high+low) / 2)
+            else:
+                middle = ((high+low) / 2) - .5
+
+            middle = int(middle)
+
+```
+
+<https://leetcode.com/problems/find-the-distance-value-between-two-arrays/description/>
+
+```python
+
+class Solution:
+    def findTheDistanceValue(self, arr1: List[int], arr2: List[int], d: int) -> int:
+        count = len(arr1)
+        for x in range(len(arr1)):
+            for y in range(len(arr2)):
+                if (abs(arr1[x]-arr2[y])) <= d:
+                    count -= 1
+                    break
+                else:
+                    continue
+
+        return count
+
+```
