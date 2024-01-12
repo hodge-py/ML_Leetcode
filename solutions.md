@@ -261,6 +261,80 @@ class Solution:
                 
 ```
 
+https://leetcode.com/problems/determine-if-string-halves-are-alike/description/
+
+```python
+
+class Solution:
+    def halvesAreAlike(self, s: str) -> bool:
+        c = []
+        d = []
+        for x in range(len(s)):
+            if x >= (len(s)/2):
+                d += s[x]
+            else:
+                c += s[x]
+        
+        vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+
+        count1 = 0
+        count2 = 0
+
+        for x in range(len(c)):
+            if c[x] in vowels:
+                count1 += 1
+
+        for x in range(len(d)):
+            if d[x] in vowels:
+                count2 += 1
+
+        if count1 != count2:
+            return False
+        else:
+            return True
+
+```
+
+https://leetcode.com/problems/roman-to-integer/description/
+
+```python
+
+class Solution:
+    def romanToInt(self, s: str) -> int:
+        hashmap = {
+            'I' : 1,
+            'V' : 5,
+            'X' : 10,
+            "L" : 50,
+            "C" : 100,
+            "D" : 500,
+            "M" : 1000,
+            "IV" : 4,
+            "IX" : 9,
+            "XL" : 40,
+            "XC" : 90,
+            "CD" : 400,
+            "CM" : 900
+
+        }
+
+        digits = 0
+
+        for x in range(len(s)-1):
+            if (s[x]+s[x+1]) in hashmap:
+                digits += hashmap[(s[x]+s[x+1])]
+                s = s.replace((s[x]+s[x+1]),'11',1)
+        
+
+        for x in range(len(s)):
+            if s[x] in hashmap:
+                digits += hashmap[s[x]]
+        
+        return digits
+
+
+```
+
 ## Queue
 
 https://leetcode.com/problems/first-unique-character-in-a-string/description/
