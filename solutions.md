@@ -387,7 +387,22 @@ class Solution:
 
 # Two Pointer
 
+https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
 
+```python
+
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        i = 0
+        j = 1
+        while j < len(nums):
+            if nums[i] == nums[j]:
+                nums.pop(j)
+            else:
+                i += 1
+                j = i + 1
+        
+```
 
 
 
