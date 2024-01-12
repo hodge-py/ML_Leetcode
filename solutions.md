@@ -1,13 +1,15 @@
 # Leetcode notes and solutions
-### These solutions are not optimized and only serve to solve the problems.
 
-# Array -> Hash Table
+These solutions are not optimized and only serve to solve the problems.
+
+## Array -> Hash Table
 
 hashmaps = {}
 Values can be stored in the hashmap and then retrieved using their key. This results in a $O(1)$ since you can key a specific value. Or $O(n)$ when looping through the hashmap.
 
-## Questions related:
+
 https://leetcode.com/problems/single-number/description/ 
+
 ```python
 
 class Solution:
@@ -81,11 +83,11 @@ class Solution:
 
 ```
 
-# Array -> Inplace Movement
+## Array -> Inplace Movement
 
 Use a tmp variable to hold the value of the value in the array that will be changed.
 
-## Questions related:
+
 https://leetcode.com/problems/remove-element/
 
 ```python
@@ -110,9 +112,9 @@ class Solution:
         
 ```
 
-# Dynamic Programming
+## Dynamic Programming
 
-## Questions Related:
+
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 
 ```python
@@ -153,9 +155,8 @@ class Solution:
             
 ```
 
-# String
+## String
 
-## Questions Related:
 
 https://leetcode.com/problems/fizz-buzz/
 
@@ -260,7 +261,7 @@ class Solution:
                 
 ```
 
-# Queue
+## Queue
 
 https://leetcode.com/problems/first-unique-character-in-a-string/description/
 
@@ -288,7 +289,7 @@ class Solution:
 
 ```
 
-# Math
+## Math
 
 https://leetcode.com/problems/add-digits/
 
@@ -385,7 +386,7 @@ class Solution:
 
 ```
 
-# Two Pointer
+## Two Pointer
 
 https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
 
