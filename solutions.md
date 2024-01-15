@@ -7,7 +7,6 @@ These solutions are not optimized and only serve to solve the problems.
 hashmaps = {}
 Values can be stored in the hashmap and then retrieved using their key. This results in a $O(1)$ since you can key a specific value. Or $O(n)$ when looping through the hashmap.
 
-
 <https://leetcode.com/problems/single-number/description/>
 
 ```python
@@ -151,6 +150,30 @@ class Solution:
         else:
             return self.fib(n-1) + self.fib(n-2)
             
+```
+
+<https://leetcode.com/problems/counting-bits/description/>
+
+```python
+
+class Solution:
+    def countBits(self, n: int) -> List[int]:
+        print(bin(10)[2:])
+        arr = []
+        for x in range(n+1):
+            arr += [bin(x)[2:]]
+
+        total = []
+        for y in range(len(arr)):
+            count = 0
+            for z in range(len(arr[y])):
+                if arr[y][z] == '1':
+                    count += 1
+
+            total += [count]
+
+        return total
+
 ```
 
 ## String
