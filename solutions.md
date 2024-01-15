@@ -361,6 +361,30 @@ class Solution:
 
 ```
 
+<https://leetcode.com/problems/palindrome-number/description/>
+
+```python
+
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        stringer = str(x)
+        reverse = ''
+        minus = ''
+        for x in range(len(stringer)):
+            if stringer[x] == '-':
+                minus = stringer[x]
+            else:
+                reverse += stringer[-x-1]
+
+        reverse = minus + reverse
+
+        if stringer == reverse:
+            return True
+        else:
+            return False
+
+```
+
 ## Queue
 
 <https://leetcode.com/problems/first-unique-character-in-a-string/description/>
