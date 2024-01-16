@@ -110,6 +110,29 @@ class Solution:
         
 ```
 
+## Array
+
+<https://leetcode.com/problems/plus-one/description/>
+
+```python
+
+class Solution:
+    def plusOne(self, digits: List[int]) -> List[int]:
+        stringer = ''
+        for x in range(len(digits)):
+            stringer += str(digits[x])
+
+        value = int(stringer) + 1
+        
+        value = str(value)
+        tmp = []
+        for x in value:
+            tmp += [int(x)]
+
+        return tmp
+
+```
+
 ## Dynamic Programming
 
 <https://leetcode.com/problems/best-time-to-buy-and-sell-stock/>
