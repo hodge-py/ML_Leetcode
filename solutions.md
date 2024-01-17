@@ -133,6 +133,29 @@ class Solution:
 
 ```
 
+<https://leetcode.com/problems/duplicate-zeros/description/>
+
+```python
+
+class Solution:
+    def duplicateZeros(self, arr: List[int]) -> None:
+        """
+        Do not return anything, modify arr in-place instead.
+        """
+        count = 0
+        for x in range(len(arr)):
+            if arr[x] == 0 and count % 2 == 0:
+                tmp = 0
+                for y in range(x,len(arr)-1):
+                    store = arr[y+1]
+                    arr[y+1] = tmp
+                    tmp = store
+                    count = 1
+            else:
+                count = 0
+
+```
+
 ## Dynamic Programming
 
 <https://leetcode.com/problems/best-time-to-buy-and-sell-stock/>
