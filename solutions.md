@@ -641,3 +641,28 @@ class Solution:
         return count
 
 ```
+
+## Greedy
+
+<https://leetcode.com/problems/maximum-69-number/description/>
+
+```python
+
+class Solution:
+    def maximum69Number (self, num: int) -> int:
+        maximum = num
+        string = str(num)
+        for x in range(len(string)):
+            if string[x] == '9':
+                placehold = string[:x] + '6' + string[x + 1:]
+                if int(placehold) > maximum:
+                    maximum = int(placehold)
+            else:
+                placehold = string[:x] + '9' + string[x + 1:]
+                if int(placehold) > maximum:
+                    maximum = int(placehold)
+
+        
+        return maximum
+
+```
