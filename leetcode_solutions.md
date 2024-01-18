@@ -745,3 +745,25 @@ class Solution:
         return maximum
 
 ```
+
+## Divide and Conquer
+
+### Number of 1bits
+
+<https://leetcode.com/problems/number-of-1-bits/description/>
+
+```python
+
+class Solution:
+    def hammingWeight(self, n: int) -> int:
+        string = f"{bin(n)}"
+        total = 0
+        for x in range(len(string)):
+            if string[x] == '1':
+                total += 1
+            else:
+                pass
+
+        return total
+
+```
