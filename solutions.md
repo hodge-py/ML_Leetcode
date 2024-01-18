@@ -7,9 +7,9 @@ These solutions are not optimized and only serve to solve the problems.
 hashmaps = {}
 Values can be stored in the hashmap and then retrieved using their key. This results in a $O(1)$ since you can key a specific value. Or $O(n)$ when looping through the hashmap.
 
-<https://leetcode.com/problems/single-number/description/>
-
 ### single number
+
+<https://leetcode.com/problems/single-number/description/>
 
 ```python
 
@@ -30,6 +30,8 @@ class Solution:
                 return x
             
 ```
+
+### majority Element
 
 <https://leetcode.com/problems/majority-element/>
 
@@ -60,6 +62,8 @@ class Solution:
         
 ```
 
+### intersection of two arrays
+
 <https://leetcode.com/problems/intersection-of-two-arrays/description/>
 
 ```python
@@ -88,6 +92,8 @@ class Solution:
 
 Use a tmp variable to hold the value of the value in the array that will be changed.
 
+### remove element
+
 <https://leetcode.com/problems/remove-element/>
 
 ```python
@@ -114,6 +120,8 @@ class Solution:
 
 ## Array
 
+### plus-one
+
 <https://leetcode.com/problems/plus-one/description/>
 
 ```python
@@ -134,6 +142,8 @@ class Solution:
         return tmp
 
 ```
+
+### duplicate zeros
 
 <https://leetcode.com/problems/duplicate-zeros/description/>
 
@@ -160,6 +170,8 @@ class Solution:
 
 ## Dynamic Programming
 
+### best time to buy and sell stock
+
 <https://leetcode.com/problems/best-time-to-buy-and-sell-stock/>
 
 ```python
@@ -185,6 +197,8 @@ class Solution:
             
 ```
 
+### fibonacci number
+
 <https://leetcode.com/problems/fibonacci-number/>
 
 ```python
@@ -199,6 +213,8 @@ class Solution:
             return self.fib(n-1) + self.fib(n-2)
             
 ```
+
+### counting bits
 
 <https://leetcode.com/problems/counting-bits/description/>
 
@@ -226,6 +242,8 @@ class Solution:
 
 ## String
 
+### fizz buzz
+
 <https://leetcode.com/problems/fizz-buzz/>
 
 ```python
@@ -248,6 +266,8 @@ class Solution:
         
 ```
 
+### reverse string
+
 <https://leetcode.com/problems/reverse-string/description/>
 
 ```python
@@ -268,6 +288,8 @@ class Solution:
             s[-1-x] = tmp
         
 ```
+
+### find the difference
 
 <https://leetcode.com/problems/find-the-difference/description/>
 
@@ -296,6 +318,8 @@ class Solution:
 ```
 
 The key strategy for this solution is removing the letters from the bigger array until only 1 element remains. Then return that element.
+
+### valid anagram
 
 <https://leetcode.com/problems/valid-anagram/description/>
 
