@@ -9,6 +9,8 @@ Values can be stored in the hashmap and then retrieved using their key. This res
 
 <https://leetcode.com/problems/single-number/description/>
 
+### single number
+
 ```python
 
 class Solution:
