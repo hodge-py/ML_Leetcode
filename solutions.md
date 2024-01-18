@@ -353,6 +353,8 @@ class Solution:
                 
 ```
 
+### determine if string halves are alike
+
 <https://leetcode.com/problems/determine-if-string-halves-are-alike/description/>
 
 ```python
@@ -386,6 +388,8 @@ class Solution:
             return True
 
 ```
+
+### roman to integer
 
 <https://leetcode.com/problems/roman-to-integer/description/>
 
@@ -427,6 +431,8 @@ class Solution:
 
 ```
 
+### valid palidrome
+
 <https://leetcode.com/problems/valid-palindrome/description/>
 
 ```python
@@ -456,6 +462,8 @@ class Solution:
 
 ```
 
+### palidrome number
+
 <https://leetcode.com/problems/palindrome-number/description/>
 
 ```python
@@ -481,6 +489,8 @@ class Solution:
 ```
 
 ## Queue
+
+### first unique character
 
 <https://leetcode.com/problems/first-unique-character-in-a-string/description/>
 
@@ -510,6 +520,8 @@ class Solution:
 
 ## Math
 
+### add digits
+
 <https://leetcode.com/problems/add-digits/>
 
 ```python
@@ -529,6 +541,8 @@ class Solution:
                 num = str(count)
 
 ```
+
+### missing number
 
 <https://leetcode.com/problems/missing-number/description/>
 
@@ -550,6 +564,8 @@ class Solution:
 
 ```
 
+### power of three
+
 <https://leetcode.com/problems/power-of-three/description/>
 
 ```python
@@ -568,6 +584,8 @@ class Solution:
         return True
 
 ```
+
+### power of four
 
 <https://leetcode.com/problems/power-of-four/description/>
 
@@ -588,6 +606,8 @@ class Solution:
 
 ```
 
+### valid perfect square
+
 <https://leetcode.com/problems/valid-perfect-square/description/>
 
 ```python
@@ -607,6 +627,8 @@ class Solution:
 
 ## Two Pointer
 
+### remove duplicates from sorted array
+
 <https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/>
 
 ```python
@@ -623,6 +645,8 @@ class Solution:
                 j = i + 1
         
 ```
+
+### two sum
 
 <https://leetcode.com/problems/two-sum/>
 
@@ -644,6 +668,8 @@ class Solution:
 ```
 
 ## Binary Search
+
+### guess number higher or lower
 
 <https://leetcode.com/problems/guess-number-higher-or-lower/description/>
 
@@ -672,6 +698,8 @@ class Solution:
 
 ```
 
+### find the distance value between two arrays
+
 <https://leetcode.com/problems/find-the-distance-value-between-two-arrays/description/>
 
 ```python
@@ -692,6 +720,8 @@ class Solution:
 ```
 
 ## Greedy
+
+### maximum 69 number
 
 <https://leetcode.com/problems/maximum-69-number/description/>
 
