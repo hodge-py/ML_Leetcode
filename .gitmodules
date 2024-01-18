@@ -1,0 +1,3 @@
+[submodule "ml-coursera-python-assignments"]
+	path = ml-coursera-python-assignments
+	url = https://github.com/dibgerge/ml-coursera-python-assignments.git
