@@ -767,3 +767,27 @@ class Solution:
         return total
 
 ```
+
+## depth First
+
+### 938. Range Sum of BST
+
+<https://leetcode.com/problems/range-sum-of-bst/description/>
+
+```python
+
+class Solution:
+    def rangeSumBST(self, root: Optional[TreeNode], low: int, high: int) -> int:
+        hold = 0
+        if root:
+
+            hold += self.rangeSumBST(root.left,low,high)
+
+            hold += self.rangeSumBST(root.right,low,high)
+
+            if root.val >= low and root.val <= high:
+                hold += root.val
+        
+        return hold
+
+```
