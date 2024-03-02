@@ -1,6 +1,6 @@
 # Notes
 
-## recursion loop
+## Recursion loop
 
 - For recursion, it's helpful to picture the call stack structure in your mind.
 - If a recursion sits inside a loop, the structure resembles (almost) a N-ary tree.
